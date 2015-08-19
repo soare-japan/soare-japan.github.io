@@ -1,0 +1,244 @@
+@charset "utf-8";
+body {
+  background-color: #f5f5f5;
+}
+nav,
+nav div.container,
+header,
+#contentGroup,
+footer {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+div.container {
+  height: 58px;
+
+}
+div#my-menu.collapse.navbar-collapse {
+  height: 58px;
+/*    border-bottom:2px solid #696969;*/
+}
+.navbar-brand {
+  padding: 0;
+}
+.nav navbar-nav li a:hover {
+  background-color: darkcyan;
+}
+
+/*ボタンcss*/
+
+.button {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px dotted #777;
+  border-radius: 30px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none;
+  margin: 3px;
+  padding: 10px 30px 10px 10px;
+}
+/*
+
+.button:hover{
+    background-color: #2f89b3;
+  color: aliceblue;
+}
+
+.hvr-buzz-out:hover {
+  background-color: #2f89b3;
+  color: aliceblue;
+}
+*/
+
+/*
+nav{
+  width: 1000px;
+  
+}
+*/
+
+.active {
+  color: red;
+}
+#mapField {
+  width: 120px;
+  height: 100px;
+}
+#leftColumn {
+  /*  border-right: dotted 1px #c0c0c0;*/
+  float: left;
+  padding: 10px;
+  width: 25%;
+}
+#content {
+  margin: 0 0 0 25%;
+  padding: 10px;
+  border-left: dotted 1px #c0c0c0;
+}
+.concept_box {
+  margin: 20px 20px 50px 20px;
+}
+.title {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #c0c0c0;
+  margin: 5px 0 5px 0;
+  padding: 0 0 9px 0;
+}
+.title h2 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #98fb98;
+  margin: 0;
+  padding: 0 0 8px 0;
+  color: #696969;
+  letter-spacing: 2px;
+  line-height: 100%;
+  display: inline;
+}
+
+/*リストスクロールバー*/
+
+.box_srcollbar {
+  overflow: auto;
+  width: 700px;
+  height: 300px;
+  padding: 5px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background-color: #fffff9;
+  color: #000;
+  font-size: 14px;
+}
+ul li {
+  list-style-type: none;
+}
+.media-body {
+  padding: 20px;
+  border-bottom: 1px dotted #c0c0c0;
+}
+.media-body time {
+  display: inline-block;
+  width: 175px;
+}
+
+/*基本スタイル*/
+
+div.alllink {
+  position: relative;
+  width: 210px;
+  background-color: #fff;
+  border: 3px solid #d8d8d8;
+  padding: 5px;
+  margin: 10px;
+}
+div.thumb {
+  margin-bottom: 15px;
+}
+dl.info {
+  padding.5px 5px 0;
+}
+dl.info dt {
+  margin-bottom: 10px;
+  font-size: 108%;
+  font-weight: bold;
+}
+dl.info dd {
+  margin-bottom: 5px;
+  font-size: 93%;
+  color: #999;
+  /*  color: #c3c3c3;*/
+}
+p.linkarea {
+  font-size: 93%;
+  text-align: right;
+}
+
+/*a要素を全体に広げる*/
+
+body p.linkarea a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  text-indent: -999px;
+}
+
+/*商品一覧　マウスオーバー時のスタイル*/
+
+div.alllink:hover {
+  /*  div#link1:hover {*/
+  position: relative;
+  width: 205px;
+  /*  background-color: #3733cc;*/
+  border: 3px solid #fff;
+  padding: 5px;
+}
+div#link1:hover {
+  background-color:#ff69b4;
+  color: #dcdcdc;
+}
+div#link2:hover {
+  background-color: #ffd700;
+  color: #2cb4ad;
+}
+div#link3:hover {
+  background-color: #228b22;
+  color: #dcdcdc;
+}
+div#link4:hover {
+  background-color: #00008b;
+  color: #dcdcdc;
+}
+div#link5:hover {
+  background-color: #b22222;
+  color: #dcdcdc;
+}
+div#link6:hover {
+  background-color: #626063;
+  color: #dcdcdc;
+}
+div.alllink:hover dl.info dt {
+  color: #fff;
+}
+div.alllink:hover dl.info dd {
+  color: #f8f4e6;
+}
+.gallery_box {
+  overflow: hidden;
+}
+.alllink {
+  display: inline-block;
+  margin: 0 0 15px 15px;
+  width: 200px;
+}
+.gallery_box .alllink:first-child {
+  margin: 0;
+}
+.gallery_box:first-of-type {
+  margin-top: 30px;
+}
+
+.btn-primary{
+  background-color:#ffa500;
+  color:darkblue;
+  border-color: #ffa500;
+  border-radius: 30px;
+}
+
+footer{
+  width:1000px;
+  height:50px;
+  padding-top:5px;
+  background-color:#696969;
+  color:#fff;
+  text-align: center;
+}
