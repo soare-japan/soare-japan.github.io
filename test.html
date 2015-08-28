@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ローディング</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+/*      animation: fadeout .5s 5s both;*/
+      animation-name: fadeout;
+      animation-duration: .5s;
+      animation-delay: 5s;
+      animation-fill-mode: both;
+      
+      background-color: darkblue;
+/*
+      color: white;
+      font-size: 150%;
+      text-align: center;
+      line-height: 100vh;
+*/
+    }
+    @keyframes fadeout {
+      from {opacity: 1;}
+      to   {opacity: 0; visibility: hidden;}
+    }
+    
+    #message{
+      width:200px;
+      height:200px;
+      background-color:cyan;
+      margin: calc(50vh - 100px) auto;
+      text-align: center;
+      line-height: 200px;
+      font-size: 150%;
+      animation: kaiten 5s infinite;
+    }
+    
+    @keyframes kaiten {
+      0% {transform: rotate(0deg);border-radius: 0 0;}
+    25% {transform: rotate(90deg);background-color: aquamarine; border-radius: 100px 100px;}
+    50% {transform: rotate(180deg);border-radius: 0 0;}
+    75% {transform: rotate(270deg);background-color:lightcyan;border-radius: 100px 100px;}
+  100% {transform: rotate(360deg);border-radius: 0 0;}
+    }
+    
+    h1{ font-family: sans-serif;
+    }
+    
+    .season{
+      margin:10px;
+      padding-left: 30px;
+      color: pink;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="loading">
+    <div id="message">Now loading...</div>
+  </div>
+  
+  <h1>日本の四季</h1>
+  <div class="season">
+  <p>春</p>
+  <p>夏</p>
+  <p>秋</p>
+  <p>冬</p>
+  </div>
+  </body>
+
+</html>
